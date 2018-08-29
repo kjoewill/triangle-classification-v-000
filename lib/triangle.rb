@@ -10,6 +10,8 @@ class Triangle
     if is_equilateral
       :equilateral
     elsif is_isosceles
+      :isosceles
+    else
       
   end
   
