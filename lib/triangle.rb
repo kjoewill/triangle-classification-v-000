@@ -18,6 +18,7 @@ class Triangle
   
   private
   
-  isIs
+  def is_isosceles?
+  end
   
 end
