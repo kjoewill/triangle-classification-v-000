@@ -7,7 +7,7 @@ class Triangle
   end
   
   def kind 
-    if has_zero_sides?
+    if has_zero_sides? || !follows_triangle_inequality?
       raise TriangleError
     else
       determine_type
@@ -40,6 +40,12 @@ class Triangle
   
   def has_zero_sides?
     @side1 <= 0 || @side2 <= 0 || @side3 <= 0
+  end
+  
+  def follows_triangle_inequality?
+    @side1 + @side2 > @side3 &&
+    @side1 + @side3 > @side2 &&
+    @side2 + @side3 > @side1
   end
   
 end
