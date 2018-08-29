@@ -9,6 +9,18 @@ class Triangle
   def kind 
     
     if has_zero_sides?
+      begin
+        raise TriangleError
+      rescue PartnerError => error
+          puts error.message
+      end
+    else
+      person.partner = self
+    end
+    
+    
+    
+    if has_zero_sides?
       raise
     
     if is_equilateral?
