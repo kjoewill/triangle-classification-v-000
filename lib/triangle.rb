@@ -7,21 +7,14 @@ class Triangle
   end
   
   def kind 
-    
     if has_zero_sides?
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
+      raise TriangleError
     else
-      person.partner = self
+      determine_type
     end
+  end
     
     
-    
-    if has_zero_sides?
-      raise
     
     if is_equilateral?
       :equilateral
@@ -37,6 +30,16 @@ class Triangle
   end
   
   private
+  
+  def determine_type
+    if is_equilateral?
+      :equilateral
+    elsif is_isosceles?
+      :isosceles
+    else
+      :scalene
+    end
+  end
   
   def is_equilateral?
     @side1 == @side2 && @side1 == @side3 
