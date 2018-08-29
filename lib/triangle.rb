@@ -14,9 +14,7 @@ class Triangle
     end
   end
     
-  class TriangleError < StandardError
-    # triangle error code
-  end
+ 
   
   private
   
@@ -51,5 +49,9 @@ class Triangle
   def is_valid?
     no_zero_sides? && follows_triangle_inequality?
   end
+  
+   class TriangleError < StandardError
+    # triangle error code
+   end
   
 end
