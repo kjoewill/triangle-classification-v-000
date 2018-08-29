@@ -8,7 +8,9 @@ class Triangle
   
   def kind 
     if is_equilateral
-      :
+      :equilateral
+    elsif is_isosceles
+      
   end
   
   
