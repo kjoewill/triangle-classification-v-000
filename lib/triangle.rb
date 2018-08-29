@@ -7,7 +7,7 @@ class Triangle
   end
   
   def kind 
-    
+    "TBD"
   end
   
   
