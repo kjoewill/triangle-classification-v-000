@@ -49,7 +49,7 @@ class Triangle
   end
   
   def is_valid?
-    !has_zero_sides? || follows_triangle_inequality?
+    !has_zero_sides? && follows_triangle_inequality?
   end
   
 end
