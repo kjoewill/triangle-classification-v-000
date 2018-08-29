@@ -8,7 +8,8 @@ class Triangle
   
   def kind 
     
-    if
+    if has_zero_sides?
+      raise
     
     if is_equilateral?
       :equilateral
@@ -34,7 +35,7 @@ class Triangle
   end
   
   def has_zero_sides?
-    @side1 <= 0 || @side2 <= 0 && @side3 > 0
+    @side1 <= 0 || @side2 <= 0 || @side3 <= 0
   end
   
 end
