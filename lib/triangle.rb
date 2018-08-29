@@ -13,8 +13,6 @@ class Triangle
       raise TriangleError
     end
   end
-    
- 
   
   private
   
@@ -50,8 +48,8 @@ class Triangle
     no_zero_sides? && follows_triangle_inequality?
   end
   
-   class TriangleError < StandardError
+  class TriangleError < StandardError
     # triangle error code
-   end
+  end
   
 end
