@@ -7,7 +7,8 @@ class Triangle
   end
   
   def kind 
-    "TBD"
+    if is_equilateral
+      :
   end
   
   
