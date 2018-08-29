@@ -14,17 +14,6 @@ class Triangle
     end
   end
     
-    
-    
-    if is_equilateral?
-      :equilateral
-    elsif is_isosceles?
-      :isosceles
-    else
-      :scalene
-    end
-  end
-  
   class TriangleError < StandardError
     # triangle error code
   end
