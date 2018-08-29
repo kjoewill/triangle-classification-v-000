@@ -11,7 +11,7 @@ class Triangle
     if has_zero_sides?
       begin
         raise TriangleError
-      rescue PartnerError => error
+      rescue TriangleError => error
           puts error.message
       end
     else
