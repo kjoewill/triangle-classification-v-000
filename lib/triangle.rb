@@ -12,7 +12,8 @@ class Triangle
     elsif is_isosceles
       :isosceles
     else
-      
+      :scalene
+    end
   end
   
   
